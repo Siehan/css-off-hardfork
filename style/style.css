@@ -10,11 +10,16 @@
 }
 
 body {
-  background: var(--blue);
+  background-color: var(--blue);
   color: #fff;
   font-family: Atma, sans-serif;
-  margin: 0;
   font-size: 1.5rem;
+  margin: 0;
+  background-image: url("../img/blue-splash.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1,
@@ -33,4 +38,160 @@ button {
 /* ... Your turn! ... */
 
 @media (min-width: 640px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #7fb238eb;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 0.6rem;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 255, 0.623);
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange);
+  margin-top: 20rem;
+}
+
+header h1 {
+  font-size: 5rem;
+  margin: auto;
+}
+
+header p {
+  font-size: 3rem;
+  height: 40vh;
+}
+
+section {
+  padding: 4rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.obstacles-group > article {
+  border: 0;
+  background-color: var(--green);
+  border-radius: 1.5rem;
+  padding: 2.3rem 5.5rem;
+}
+
+.obstacles-group > article:hover {
+  background-color: var(--yellow);
+}
+
+.obstacles {
+  background-color: var(--orange);
+}
+
+.obstacle-title,
+h3,
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.prizes {
+  background-color: var(--green);
+}
+
+.prizes-group > article {
+  border: 2px solid var(--yellow);
+  border-style: dashed;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.prizes-group > article:hover {
+  background-color: rgba(0, 0, 255, 0.623);
+}
+
+.apply {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  background-color: var(--orange);
+  display: block;
+  border: 0;
+  width: 40%;
+  height: 60px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder {
+  padding: 1px 2px;
+  font-size: 1.5rem;
+  font-family: Atma, sans-serif;
+  color: #fff;
+}
+
+.wrap img {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+button[type="submit"] {
+  margin-left: 30%;
+  background-color: var(--yellow);
+  border: 0;
+  width: 15%;
+  height: 60px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-shadow: rgb(0 0 0 / 20%) 2px 2px 0px;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: var(--green);
+  padding: 5px 10px;
+}
+
+footer {
+  background-color: var(--yellow);
+  text-align: center;
+  color: black;
 }
